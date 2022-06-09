@@ -1,5 +1,6 @@
-# Friday Night Funkin' - PEDA Engine
-Engine pros mobile melhor que a BS
+# Um FORK da PE (Peda Engine!)
+
+(Textos abaixo são da engine padrão.)
 ## Instalação:
 É....
 Instala pelo source mesmo
