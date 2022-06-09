@@ -12,12 +12,25 @@ local ofs = 50;
 local followchars = true;
 local del = 0;
 local del2 = 0;
+
 function onCreate()
+    makeLuaSprite('space', 'space', -630, 750);
+    scaleObject('space', 2.8, 2.8);
+	setScrollFactor('space', 0.9, 0.9);
+	
+	makeLuaSprite('placeholder Hell','placeholder Hell', -630, 720);
+	setScrollFactor('placeholder Hell', 0.9, 0.9);
+    scaleObject('placeholder Hell', 2.8, 2.8);
+
+    makeLuaSprite('dark', 'dark', 0, 0);
+    setScrollFactor('dark', 0.9, 0.9)
+    setObjectCamera('dark', 'hud');
+
+        addLuaSprite('space', false)
+        addLuaSprite('placeholder Hell', false);
+        addLuaSprite('dark', true);
 
 end
-
-
-
 
 function onUpdate()
 	if del > 0 then
